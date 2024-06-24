@@ -19,12 +19,34 @@ The dataset used in this project is the "Phishing Websites" dataset from the [UC
 
 ## Features
 Key features used in this project include:
-- URL length
-- Presence of IP address
-- Use of '@' symbol
-- SSL state
-- Domain age
-- And many more...
+- **having_ip_address**: Whether the URL contains an IP address
+- **url_length**: Length of the URL
+- **shortining_service**: Use of shortening services
+- **having_at_symbol**: Presence of '@' symbol in the URL
+- **double_slash_redirecting**: Double slash redirecting
+- **prefix_suffix**: Use of prefix and suffix in the URL
+- **having_sub_domain**: Presence of subdomains
+- **sslfinal_state**: State of SSL
+- **domain_registration_length**: Length of domain registration
+- **favicon**: Use of favicon
+- **port**: Port numbers
+- **https_token**: Use of HTTPS token in the URL
+- **request_url**: Request URL
+- **url_of_anchor**: URL of anchor
+- **links_in_tags**: Links in tags
+- **sfh**: Server Form Handler
+- **submitting_to_email**: Submitting to email
+- **abnormal_url**: Abnormal URL
+- **redirect**: Redirect
+- **on_mouseover**: On mouse over
+- **rightclick**: Right click
+- **popupwindow**: Popup window
+- **iframe**: IFrame
+- **age_of_domain**: Age of domain
+- **dnsrecord**: DNS record
+- **google_index**: Google index
+- **links_pointing_to_page**: Links pointing to page
+- **statistical_report**: Statistical report
 
 ## Models
 The following machine learning models were trained and evaluated:
@@ -55,7 +77,17 @@ To run this project, you need to have Python and the following libraries install
 - scikit-learn
 - matplotlib
 - jupyter
+- re
+- urllib
+- ssl
+- socket
+- whois
+- BeautifulSoup
+- requests
+- datetime
+- dns.resolver
+- joblib
 
 You can install these libraries using pip:
 ```bash
-pip install pandas numpy scikit-learn matplotlib jupyter
+pip install pandas numpy scikit-learn matplotlib jupyter re urllib3 ssl socket whois beautifulsoup4 requests python-dateutil dnspython joblib
